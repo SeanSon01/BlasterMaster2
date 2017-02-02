@@ -13,3 +13,4 @@ C:\Users\nthol934\Source\Repos\BlasterMaster2\Blaster Master\obj\Release\Blaster
 C:\Users\nthol934\Source\Repos\BlasterMaster2\Blaster Master\obj\Release\Blaster Master.csproj.GenerateResource.Cache
 C:\Users\nthol934\Source\Repos\BlasterMaster2\Blaster Master\obj\Release\BlasterMaster.exe
 C:\Users\nthol934\Source\Repos\BlasterMaster2\Blaster Master\obj\Release\BlasterMaster.pdb
+C:\Users\nthol934\Source\Repos\BlasterMaster2\Blaster Master\obj\Release\Blaster Master.csprojResolveAssemblyReference.cache
