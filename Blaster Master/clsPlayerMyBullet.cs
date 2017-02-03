@@ -16,7 +16,7 @@ namespace BlasterMaster
         private System.Drawing.Bitmap bullet;
         private ImageAttributes ImagingAtt = new ImageAttributes();
 
-        public clsPlayerMyBullet(int x, int y) : base(x, y)
+        public clsPlayerMyBullet(int x, int y, bool) : base(x, y)
         {
             //------------------------------------------------------------------------------------------------------------------
             // Purpose: Class constructor  
@@ -35,7 +35,7 @@ namespace BlasterMaster
 
             // Scroll bullets
             base.setY(base.getY() - 15);
-
+            
             // Sync collision rect
             base.setRectX(base.getX() + 2);
             base.setRectY(base.getY());

@@ -904,7 +904,7 @@ namespace BlasterMaster
                                 shootKeyUP = false;
 
                                 // Create new instance of a player bullet
-                                for (i = 0; i <= 5; i++)
+                                for (i = 0; i <= 10; i++)
                                 {
                                     if (playerbullet[i, 0] == null)
                                     {
@@ -922,12 +922,12 @@ namespace BlasterMaster
                                             case 3: //:: x3 fire ::
                                                
                                                 // Create new instances
-                                                playerbullet[i, 0] = new clsPlayerBullet(x - 2, y);
+                                                playerbullet[i, 0] = new clsPlayerMyBullet(x - 2, y);
                                                 playerbullet[i, 1] = new clsPlayerBullet(x + 10, y + 10);
-                                                playerbullet[i, 2] = new clsPlayerBullet(x - 15, y + 10);
+                                                playerbullet[i, 2] = new clsPlayerMyBullet(x - 15, y + 10);
 
                                                 // Dec num of fire round remaining
-                                                player.setX3FireAmmo(player.getX3FireAmmo() - 1);
+                                                player.setX3FireAmmo(player.getX3FireAmmo() + 1);
 
                                                 // Bail out
                                                 bailOut = true;
@@ -936,8 +936,8 @@ namespace BlasterMaster
                                             case 5: //:: x5 fire ::
 
                                                 // Create new instances
-                                                playerbullet[i, 0] = new clsPlayerBullet(x - 2, y);
-                                                playerbullet[i, 1] = new clsPlayerBullet(x + 10, y + 10);
+                                                playerbullet[i, 0] = new clsPlayerMyBullet(x - 2, y);
+                                                playerbullet[i, 1] = new clsPlayerMyBullet(x + 10, y + 10);
                                                 playerbullet[i, 2] = new clsPlayerBullet(x - 15, y + 10);
                                                 playerbullet[i, 3] = new clsPlayerBullet(x + 20, y + 20);
                                                 playerbullet[i, 4] = new clsPlayerBullet(x - 25, y + 20);
@@ -965,7 +965,7 @@ namespace BlasterMaster
 
                                 // Flag off and set governing delay (~5 round p/sec)
                                 shootKeyPress = false;
-                                delayNextShot = 12;
+                                delayNextShot = 0;
 
                             }
                         }
@@ -1365,7 +1365,6 @@ namespace BlasterMaster
                 }
             }
         }
-
         private void doPickups()
         {
             //------------------------------------------------------------------------------------------------------------------

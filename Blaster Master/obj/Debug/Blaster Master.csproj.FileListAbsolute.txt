@@ -22,3 +22,11 @@ C:\Documents and Settings\Trent Jackson\Desktop\883-22244-Blaster-Master-C\Blast
 C:\Documents and Settings\Trent Jackson\Desktop\883-22244-Blaster-Master-C\Blaster Master C#\Blaster Master\obj\Debug\Blaster Master.csproj.GenerateResource.Cache
 C:\Documents and Settings\Trent Jackson\Desktop\883-22244-Blaster-Master-C\Blaster Master C#\Blaster Master\obj\Debug\BlasterMaster.exe
 C:\Documents and Settings\Trent Jackson\Desktop\883-22244-Blaster-Master-C\Blaster Master C#\Blaster Master\obj\Debug\BlasterMaster.pdb
+C:\Users\nthol934\Source\Repos\BlasterMaster2\Blaster Master\bin\Debug\BlasterMaster.exe
+C:\Users\nthol934\Source\Repos\BlasterMaster2\Blaster Master\bin\Debug\BlasterMaster.pdb
+C:\Users\nthol934\Source\Repos\BlasterMaster2\Blaster Master\obj\Debug\Blaster Master.csprojResolveAssemblyReference.cache
+C:\Users\nthol934\Source\Repos\BlasterMaster2\Blaster Master\obj\Debug\BlasterMaster.Form1.resources
+C:\Users\nthol934\Source\Repos\BlasterMaster2\Blaster Master\obj\Debug\BlasterMaster.Properties.Resources.resources
+C:\Users\nthol934\Source\Repos\BlasterMaster2\Blaster Master\obj\Debug\Blaster Master.csproj.GenerateResource.Cache
+C:\Users\nthol934\Source\Repos\BlasterMaster2\Blaster Master\obj\Debug\BlasterMaster.exe
+C:\Users\nthol934\Source\Repos\BlasterMaster2\Blaster Master\obj\Debug\BlasterMaster.pdb
