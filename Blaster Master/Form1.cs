@@ -920,11 +920,12 @@ namespace BlasterMaster
                                                 break;
 
                                             case 3: //:: x3 fire ::
-                                               
+
                                                 // Create new instances
-                                                playerbullet[i, 0] = new clsPlayerMyBullet(x - 2, y);
+                                                
+                                                playerbullet[i, 0] = new clsPlayerMyBullet(x - 2, y,true);
                                                 playerbullet[i, 1] = new clsPlayerBullet(x + 10, y + 10);
-                                                playerbullet[i, 2] = new clsPlayerMyBullet(x - 15, y + 10);
+                                                playerbullet[i, 2] = new clsPlayerMyBullet(x - 15, y + 10, false);
 
                                                 // Dec num of fire round remaining
                                                 player.setX3FireAmmo(player.getX3FireAmmo() + 1);
@@ -936,8 +937,8 @@ namespace BlasterMaster
                                             case 5: //:: x5 fire ::
 
                                                 // Create new instances
-                                                playerbullet[i, 0] = new clsPlayerMyBullet(x - 2, y);
-                                                playerbullet[i, 1] = new clsPlayerMyBullet(x + 10, y + 10);
+                                                playerbullet[i, 0] = new clsPlayerBullet(x - 2, y);
+                                                playerbullet[i, 1] = new clsPlayerBullet(x + 10, y + 10);
                                                 playerbullet[i, 2] = new clsPlayerBullet(x - 15, y + 10);
                                                 playerbullet[i, 3] = new clsPlayerBullet(x + 20, y + 20);
                                                 playerbullet[i, 4] = new clsPlayerBullet(x - 25, y + 20);
@@ -964,8 +965,8 @@ namespace BlasterMaster
                                 }
 
                                 // Flag off and set governing delay (~5 round p/sec)
-                                shootKeyPress = false;
-                                delayNextShot = 0;
+                                shootKeyPress = true;
+                                delayNextShot = 10;
 
                             }
                         }
