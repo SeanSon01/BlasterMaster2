@@ -922,11 +922,9 @@ namespace BlasterMaster
                                             case 3: //:: x3 fire ::
 
                                                 // Create new instances
-                                                 bool f = true;
-                                                bool g = false;
-                                                playerbullet[i, 0] = new clsPlayerMyBullet(x - 2, y,f);
-                                                playerbullet[i, 1] = new clsPlayerBullet(x + 10, y + 10);
-                                                playerbullet[i, 2] = new clsPlayerMyBullet(x - 15, y + 10, g);
+                                                playerbullet[i, 0] = new clsPlayerMyBullet(x - 2, y,false);
+                                                playerbullet[i, 1] = new clsPlayerBullet(x - 2, y + 10);
+                                                playerbullet[i, 2] = new clsPlayerMyBullet(x - 2, y + 10, true);
 
                                                 // Dec num of fire round remaining
                                                 player.setX3FireAmmo(player.getX3FireAmmo() + 1);

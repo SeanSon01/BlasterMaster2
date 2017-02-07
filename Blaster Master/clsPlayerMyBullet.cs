@@ -11,7 +11,7 @@ namespace BlasterMaster
 {
     public class clsPlayerMyBullet : clsPlayerBullet
     {
-        bool Split;
+        bool m_Split;
         // Obj refs and instances
         private System.Drawing.Bitmap bullet;
         private ImageAttributes ImagingAtt = new ImageAttributes();
@@ -21,7 +21,7 @@ namespace BlasterMaster
             //------------------------------------------------------------------------------------------------------------------
             // Purpose: Class constructor  
             //------------------------------------------------------------------------------------------------------------------
-
+            m_Split = Split;
             // Load resource image(s) & remove background and thu a sprite is born 
             bullet = BlasterMaster.Properties.Resources.playerBullet;
             bullet.MakeTransparent(Color.White);
@@ -35,13 +35,14 @@ namespace BlasterMaster
 
             // Scroll bullets
             base.setY(base.getY() - 15);
-            if (Split == true)
+            if (m_Split == true)
             {
-                base.setX(base.getX() + 7);
+                base.setX(base.getX() + 4);
+                
             }
             else
             {
-                base.setX(base.getX() - 7);
+                base.setX(base.getX() - 4);
             }
                 
             // Sync collision rect
