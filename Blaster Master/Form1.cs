@@ -922,10 +922,11 @@ namespace BlasterMaster
                                             case 3: //:: x3 fire ::
 
                                                 // Create new instances
-                                                
-                                                playerbullet[i, 0] = new clsPlayerMyBullet(x - 2, y,true);
+                                                 bool f = true;
+                                                bool g = false;
+                                                playerbullet[i, 0] = new clsPlayerMyBullet(x - 2, y,f);
                                                 playerbullet[i, 1] = new clsPlayerBullet(x + 10, y + 10);
-                                                playerbullet[i, 2] = new clsPlayerMyBullet(x - 15, y + 10, false);
+                                                playerbullet[i, 2] = new clsPlayerMyBullet(x - 15, y + 10, g);
 
                                                 // Dec num of fire round remaining
                                                 player.setX3FireAmmo(player.getX3FireAmmo() + 1);
@@ -965,7 +966,7 @@ namespace BlasterMaster
                                 }
 
                                 // Flag off and set governing delay (~5 round p/sec)
-                                shootKeyPress = true;
+                                shootKeyPress = false;
                                 delayNextShot = 10;
 
                             }
